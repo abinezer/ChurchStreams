@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HomePage</title>
+  </head>
+  <body>
+    <h1>Streams of Church Links</h1>
+    {% for i in listOfVideos %}
+    <h3>{{ i.title }}</h3>
+    <iframe width="420" height="345" src="{{ i.link }}&autoplay=1&mute=1" allowfullscreen>
+    </iframe>
+    {% endfor %}
+  </body>
+</html>
